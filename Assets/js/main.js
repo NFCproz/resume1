@@ -1,4 +1,4 @@
-var frame = document.getElementById('root')
+const frame = document.getElementById('root');
 
 $(window).on('load', function () {
   loadingScreen = $('#preloader');
@@ -27,7 +27,10 @@ function InitializeIframe(){
 }
   
 $('.nav-link').on('click',function(){
-  if(this.pathname != '/')
+  if(this.pathname != '/'){
     frame.src = this.pathname;
+    $('.navbar-collapse').collapse('hide');
+    document.querySelector('body').classList.remove('lock');
+  }
   return false;
 });
