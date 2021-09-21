@@ -20,8 +20,7 @@ $('.navbar-toggler').on("click", function(){
 
 function InitializeIframe(){
   try {
-    //70 is for the bottom of the page to not get covered by the footer
-    frame.height=frame.contentWindow.document.body.scrollHeight + 70;
+    frame.height=frame.contentWindow.document.body.scrollHeight;
   } catch (error) {
     console.error(error);
   }
