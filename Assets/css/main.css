@@ -541,3 +541,17 @@ footer .copyright{
 footer .copyright span {
     color: var(--secondery-text);
 }
+.copyright{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: var(--nav-and-footer);
+    color: var(--primary);
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Abel', sans-serif;
+}
+
+.copyright span {
+    color: var(--secondery-text);
+}
